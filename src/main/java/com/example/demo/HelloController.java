@@ -15,7 +15,7 @@ public class HelloController {
     }
     @GetMapping("/testing/{number}")
     public String getNumber(@PathVariable int number){
-        return "your entered number" + number;
+        return "your entered number " + number;
     }
     @PostMapping("/sample")
     public String saveData(){
