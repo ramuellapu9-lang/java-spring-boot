@@ -11,15 +11,15 @@ public class HelloController {
 
     @GetMapping("/")
     public String hello() {
-        return "Hello Spring Bootddd";
+        return "Hello Spring it was testing";
     }
     @GetMapping("/testing/{number}")
     public String getNumber(@PathVariable int number){
-        return "your entedrd number" + number;
+        return "your entered number" + number;
     }
     @PostMapping("/sample")
     public String saveData(){
-        return "data saved successsddddfully";
+        return "data saved successfully";
     }
 
 }
