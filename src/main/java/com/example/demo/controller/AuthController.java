@@ -101,6 +101,6 @@ public class AuthController {
     }
     @GetMapping("/test")
     public String hello(){
-        return "for testing perpose i implemented this function";
+        return "for testing perpose i implemented this functioddn";
     }
 }
