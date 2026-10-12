@@ -11,7 +11,7 @@ public class HelloController {
 
     @GetMapping("/")
     public String hello() {
-        return "Hello Spring it was good  at all";
+        return "Hello Spring boot";
     }
     @GetMapping("/testing/{number}")
     public String getNumber(@PathVariable int number){
