@@ -1,3 +1,4 @@
+
 name: Java CI
 
 on:
@@ -32,6 +33,9 @@ jobs:
 
       - name: Run tests
         run: mvn --batch-mode test
+        env:
+          JWT_SECRET: ${{ secrets.JWT_SECRET }}
+          APP_JWT_EXPIRATION_MS: "900000"
 
       - name: Build application
         run: mvn --batch-mode package -DskipTests
