@@ -99,4 +99,8 @@ public class AuthController {
             new LoginResponse(token, "Bearer")
         );
     }
+    @GetMapping("/test")
+    public String hello(){
+        return "for testing perpose i implemented this function";
+    }
 }
